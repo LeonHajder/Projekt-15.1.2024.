@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="index.css">
+		<title>Contact</title>
+	</head>
+	<body>
+	<header>
+		<div class="hero-image" style="height: 200px;"></div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h1>Contact Form</h1>
+		<div id="contact">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.5116077465815!2d15.8464661!3d45.8074588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d1ec5908843f%3A0x359719a36ec993a8!2sHonda%20Ruting%20Zagreb!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<form action="http://work2.eburza.hr/pwa/responzive-page/send-contact.php" id="contact_form" name="contact_form" method="POST">
+				<label for="fname">First Name *</label>
+				<input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+				<label for="lname">Last Name *</label>
+				<input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+				
+				<label for="lname">Your E-mail *</label>
+				<input type="email" id="email" name="email" placeholder="Your e-mail.." required>
+
+				<label for="country">Country</label>
+				<select id="country" name="country">
+				  <option value="">Please select</option>
+				  <option value="BE">Belgium</option>
+				  <option value="HR" selected>Croatia</option>
+				  <option value="LU">Luxembourg</option>
+				  <option value="HU">Hungary</option>
+				</select>
+                <label for="type">Type</label>
+				<select id="type" name="type">
+				  <option value="">Please select</option>
+				  <option value="EK9">Honda Civic Type R 1997</option>
+				  <option value="EP3" selected>Honda Civic Type R 2001</option>
+				  <option value="FN2">Honda Civic Type R 2007</option>
+				  <option value="FK2">Honda Civic Type R 2015</option>
+                  <option value="FK8">Honda Civic Type R 2017</option>
+                  <option value="FL5">Honda Civic Type R 2022</option>
+				</select>
+
+				<label for="subject">Subject</label>
+				<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</main>
+	<footer>
+		<p>Copyright &copy; 2023 Leon Hajder </p>
+	</footer>
+</body>
+</html>
